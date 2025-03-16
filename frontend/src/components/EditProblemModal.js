@@ -11,7 +11,7 @@ const EditProblemModal = ({ problem, onClose, onSave, setProblems }) => {
 
     try {
       const res = await fetch(
-        `http://localhost:3002/admin/problems/${problem._id}`,
+        `https://leetcode-project-backend.onrender.com/admin/problems/${problem._id}`,
         {
           method: "PUT",
           headers: {
