@@ -16,7 +16,7 @@ const AuthPage = ({ onLogin, setUserId }) => {
     console.log("📤 Sending login request:", userData);
 
     try {
-      const res = await fetch(`http://localhost:3002${endpoint}`, {
+      const res = await fetch(`https://leetcode-project-backend.onrender.com${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
