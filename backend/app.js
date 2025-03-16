@@ -27,6 +27,7 @@ const connectToDb = async () => {
   }
 };
 
+console.log("process.end: ", process.env);
 console.log("MONGO_URI: ", process.env.MONGO_URI);
 console.log("SENDGRID_API_KEY: ", process.env.SENDGRID_API_KEY);
 console.log("AWS_ACCESS_KEY: ", process.env.AWS_ACCESS_KEY);
