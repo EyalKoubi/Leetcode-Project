@@ -15,8 +15,7 @@ app.use("/admin", adminRouter);
 
 // התחברות למסד נתונים
 const dbURI =
-  process.env.MONGO_URI ||
-  "mongodb+srv://eyal4845:Eyal4845@cluster0.ac6s6vf.mongodb.net/new_db?retryWrites=true&w=majority";
+  process.env.MONGO_URI;
 
 const connectToDb = async () => {
   try {
