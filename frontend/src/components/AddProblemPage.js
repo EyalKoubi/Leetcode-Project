@@ -36,7 +36,7 @@ const AddProblemPage = () => {
     formData.append("code", code);
 
     try {
-      const res = await fetch("http://localhost:3002/admin/upload", {
+      const res = await fetch("https://leetcode-project-backend.onrender.com/admin/upload", {
         method: "POST",
         body: formData,
       });
