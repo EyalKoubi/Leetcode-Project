@@ -23,7 +23,7 @@ const AdminDashboard = () => {
 
   const fetchProblems = async () => {
     try {
-      const res = await fetch("http://localhost:3002/admin/problems");
+      const res = await fetch("https://leetcode-project-backend.onrender.com/admin/problems");
       const data = await res.json();
       setProblems(data);
     } catch (error) {
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:3002/admin/problems/${id}`, {
+      await fetch(`https://leetcode-project-backend.onrender.com/admin/problems/${id}`, {
         method: "DELETE",
       });
       setProblems(problems.filter((problem) => problem._id !== id));
