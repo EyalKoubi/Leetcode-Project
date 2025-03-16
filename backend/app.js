@@ -4,7 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const authRouter = require("./routes/authRoutes");
 const adminRouter = require("./routes/adminRoutes");
-console.log("process.end: ", process.env);
+require('dotenv').config({ path: './.env' });
 
 const app = express();
 app.use(cors({ origin: "*" }));
