@@ -1,10 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config();
 const cors = require("cors");
 const authRouter = require("./routes/authRoutes");
 const adminRouter = require("./routes/adminRoutes");
-require('dotenv').config({ path: './.env' });
 
 const app = express();
 app.use(cors({ origin: "*" }));
