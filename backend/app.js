@@ -1,9 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 const cors = require("cors");
 const authRouter = require("./routes/authRoutes");
 const adminRouter = require("./routes/adminRoutes");
-require("dotenv").config();
+console.log("process.end: ", process.env);
 
 const app = express();
 app.use(cors({ origin: "*" }));
@@ -26,10 +27,5 @@ const connectToDb = async () => {
     console.error("❌ Error connecting to MongoDB:", error);
   }
 };
-
-console.log("process.end: ", process.env);
-console.log("MONGO_URI: ", process.env.MONGO_URI);
-console.log("SENDGRID_API_KEY: ", process.env.SENDGRID_API_KEY);
-console.log("AWS_ACCESS_KEY: ", process.env.AWS_ACCESS_KEY);
 
 connectToDb();
