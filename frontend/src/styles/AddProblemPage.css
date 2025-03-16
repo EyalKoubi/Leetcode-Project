@@ -1,0 +1,138 @@
+/* רקע כללי עם גרדיאנט */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* הקונטיינר של הדף */
+.add-problem-container {
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* אנימציה עדינה */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* כותרת */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* טופס */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* קלטים */
+.upload-form input,
+.upload-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.upload-form input:focus,
+.upload-form textarea:focus {
+  border: 1px solid #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* תוויות */
+label {
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+/* כפתור העלאה */
+.upload-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+.upload-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* כפתור חזרה */
+.back-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+/* הודעת הצלחה/שגיאה */
+.message {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* טעינת קובץ */
+.loading {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* כפתורי העלאת קבצים */
+.upload-form input[type="file"] {
+  padding: 5px;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.upload-form input[type="file"]:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
