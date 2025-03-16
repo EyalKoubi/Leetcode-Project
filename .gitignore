@@ -42,6 +42,9 @@ backend/npm-debug.log
 backend/yarn-debug.log
 backend/yarn-error.log
 backend/pnpm-debug.log
+backend/to_save.txt1
+backend/to_save.txt2
+
 
 # Backend local build files
 backend/dist/
@@ -71,7 +74,6 @@ frontend/pnpm-debug.log
 
 # Frontend local build files
 frontend/dist/
-frontend/build/
 
 # Frontend editor & OS files
 frontend/.DS_Store
